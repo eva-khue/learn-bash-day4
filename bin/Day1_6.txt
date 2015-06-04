@@ -1,0 +1,6 @@
+result.day01.log
+result.day02.log
+result.day03.log
+result.day04.log
+result.day05.log
+result.day06.log

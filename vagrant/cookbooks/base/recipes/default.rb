@@ -41,3 +41,7 @@ template "/home/vagrant/.vimrc" do
   owner "vagrant"
   group "vagrant"
 end
+
+template "/etc/sysconfig/i18n" do
+  source "i18n.erb"
+end
