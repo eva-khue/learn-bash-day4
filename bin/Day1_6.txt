@@ -4,3 +4,4 @@ result.day03.log
 result.day04.log
 result.day05.log
 result.day06.log
+result.day06.log
