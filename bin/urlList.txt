@@ -1,5 +1,0 @@
-https://s3-ap-northeast-1.amazonaws.com/aucfan-tuningathon/dataset/result.day01.log.gz
-https://s3-ap-northeast-1.amazonaws.com/aucfan-tuningathon/dataset/result.day02.log.gz
-https://s3-ap-northeast-1.amazonaws.com/aucfan-tuningathon/dataset/result.day03.log.gz
-https://s3-ap-northeast-1.amazonaws.com/aucfan-tuningathon/dataset/result.day04.log.gz
-https://s3-ap-northeast-1.amazonaws.com/aucfan-tuningathon/dataset/result.day05.log.gz
