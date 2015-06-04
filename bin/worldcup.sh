@@ -1,16 +1,20 @@
 #!/bin/bash
 URL="https://s3-ap-northeast-1.amazonaws.com/aucfan-tuningathon/dataset/"
-listFileNames="fileNames.txt"
+listFileNames="Day1_5.txt"
 downloadFolder="download/"
 ext=".gz"
 sumDataFile="sumData.txt"
+
+START=$(date +%s)
+
+echo "Syntax: ./worldcup.sh [listFileName] [downloadURL]"
 
 #================Input processing===========================
 if [ ! -z "$1" ];
 then
 	listFileNames=$1
 fi
-echo "Take file names from: $listFileNames"
+printf "\nTake file names from: $listFileNames\n"
 
 if [ ! -z "$2" ];
 then
@@ -33,6 +37,7 @@ done < $listFileNames
 printf "Unziping and merging......."
 zcat -c ${downloadFolder}* > $sumDataFile
 printf "done\n\n"
+printf "Calculating...\n\n"
 
 
 #=================Count Total =====================
@@ -62,3 +67,8 @@ do
 	printf "$region has $regionCount unique users\n"
 done < $regionFileName
 rm $regionFileName
+
+
+END=$(date +%s)
+DIFF=$(( $END - $START ))
+printf "\nWhole script take $DIFF second(s).\n\n"
